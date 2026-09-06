@@ -1,0 +1,24 @@
+{
+  "name": "chaoslib-cli",
+  "version": "1.0.0",
+  "description": "Live monitoring dashboard for chaoslib",
+  "main": "dist/index.js",
+  "bin": {
+    "chaoslib": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "commander": "^11.1.0",
+    "tail": "^2.2.6"
+  },
+  "devDependencies": {
+    "@types/blessed": "^0.1.25",
+    "@types/node": "^20.10.4",
+    "@types/tail": "^2.2.3",
+    "typescript": "^5.3.3"
+  }
+}

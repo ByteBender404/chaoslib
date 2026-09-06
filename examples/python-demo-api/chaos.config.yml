@@ -1,0 +1,17 @@
+enabled: true
+rules:
+  - route: "/api/users"
+    fault_type: "latency"
+    probability: 0.10
+    latency_ms: [500, 1500]
+  
+  - route: "/api/orders"
+    fault_type: "error"
+    probability: 0.05
+    error_status: 500
+    error_body: 
+      error: "Internal Server Error (Chaoslib injected)"
+      
+  - route: "/api/drop"
+    fault_type: "drop_connection"
+    probability: 0.20

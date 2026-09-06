@@ -1,0 +1,8 @@
+Python Demo API listening on port 8000
+Logs are being piped to stdout, redirect to chaos.log to use CLI
+INFO:     Started server process [13692]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 11001] getaddrinfo failed
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.

@@ -1,0 +1,4 @@
+fastapi
+uvicorn
+flask
+# chaoslib-python will be installed via editable install during testing
